@@ -1,39 +1,24 @@
 # PLP-CALCULATOR
 
-A simple Python calculator program.
+# Ask the user to enter two numbers
+num1 = input("Enter first number: ")
+num2 = input("Enter second number: ")
 
-## Usage
+# Ask the user to enter a math operation
+op = input("Enter +, -, * or / : ")
 
-This calculator program allows you to perform basic arithmetic operations.
+# Convert the numbers to integers
+num1 = int(num1)
+num2 = int(num2)
 
-### How to Run
-1. Save the code below in a file named `calculator.py`.
-2. Run the program with `python calculator.py`.
-
-```python
-try:
-    num1 = float(input("Enter first number: "))
-    num2 = float(input("Enter second number: "))
-    op = input("Enter +, -, * or / : ")
-
-    if op == "+":
-        print(num1, "+", num2, "=", num1 + num2)
-    elif op == "-":
-        print(num1, "-", num2, "=", num1 - num2)
-    elif op == "*":
-        print(num1, "*", num2, "=", num1 * num2)
-    elif op == "/":
-        if num2 == 0:
-            print("Error: Division by zero is not allowed.")
-        else:
-            print(num1, "/", num2, "=", num1 / num2)
-    else:
-        print("Invalid operation.")
-except ValueError:
-    print("Please enter valid numbers.")
-```
-
-## Features
-- Addition, subtraction, multiplication, and division
-- Handles invalid input
-- Checks for division by zero
+# Do the calculation based on the operation
+if op == "+":
+    print(num1, "+", num2, "=", num1 + num2)
+elif op == "-":
+    print(num1, "-", num2, "=", num1 - num2)
+elif op == "*":
+    print(num1, "*", num2, "=", num1 * num2)
+elif op == "/":
+    print(num1, "/", num2, "=", num1 / num2)
+else:
+    print("Invalid operation.")
