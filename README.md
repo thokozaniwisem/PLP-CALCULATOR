@@ -37,6 +37,3 @@ except ValueError:
 - Addition, subtraction, multiplication, and division
 - Handles invalid input
 - Checks for division by zero
-
-## License
-MIT License
